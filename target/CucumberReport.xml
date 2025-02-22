@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.312" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-15T09:05:49.619120Z">
+<testcase classname="User Login" name="Login with valid credentials - #1.1" time="0.043">
+<system-out><![CDATA[
+Given User navigates to Login page..........................................passed
+When User enters valid email address test_new@gmail.com.....................passed
+And Enter valid password 12345..............................................passed
+And Clicks on Login button..................................................passed
+Then User should login successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with valid credentials - #1.2" time="0.008">
+<system-out><![CDATA[
+Given User navigates to Login page..........................................passed
+When User enters valid email address test_new123@test.com...................passed
+And Enter valid password 12345..............................................passed
+And Clicks on Login button..................................................passed
+Then User should login successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with invalid credentials" time="0.014">
+<system-out><![CDATA[
+Given User navigates to Login page..........................................passed
+When User enters invalid email address "test_new1234@gmail.com".............passed
+And Enter invalid password "123456".........................................passed
+And Clicks on Login button..................................................passed
+Then User should get a proper warning message...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with valid email address and invalid password" time="0.017">
+<system-out><![CDATA[
+Given User navigates to Login page..........................................passed
+When User enters valid email address "test_new123@gmail.com"................passed
+And Enter invalid password "123456".........................................passed
+And Clicks on Login button..................................................passed
+Then User should get a proper warning message...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with invalid email address and valid password" time="0.01">
+<system-out><![CDATA[
+Given User navigates to Login page..........................................passed
+When User enters invalid email address "test_new1234@gmail.com".............passed
+And Enter valid password "12345"............................................passed
+And Clicks on Login button..................................................passed
+Then User should get a proper warning message...............................passed
+]]></system-out>
+</testcase>
+</testsuite>
